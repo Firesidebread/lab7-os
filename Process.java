@@ -20,6 +20,8 @@ public class Process implements Runnable {
      */
     private int sleepTime;
 
+    private int ticket;
+
     /**
      * Create a process.
      *
@@ -40,6 +42,14 @@ public class Process implements Runnable {
      */
     public String getName() {
         return name;
+    }
+
+    public int getTicket(){
+        return ticket;
+    }
+
+    public void setTicket(int ticket){
+        this.ticket = ticket;
     }
 
     /**
